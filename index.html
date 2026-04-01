@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Panier Parfait | Paniers cadeaux à Libreville</title>
+  <meta name="description" content="Le Panier Parfait, boutique de paniers cadeaux premium à Libreville, Gabon. Fruits, gourmandises, paniers homme, femme, money cake et bouquets.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            burgundy: "#6B1E3A",
+            gold: "#C9A84C",
+            cream: "#FBF6EF",
+            text: "#2B2B2B"
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            serif: ["Cormorant Garamond", "serif"]
+          },
+          boxShadow: {
+            soft: "0 12px 40px rgba(107, 30, 58, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white font-sans text-text antialiased">
+  <div class="bg-burgundy px-4 py-2 text-center text-sm font-semibold text-white">
+    Livraison disponible à Libreville
+  </div>
+
+  <header id="site-header" class="sticky top-0 z-40 border-b border-stone-100 bg-white/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#accueil" class="text-lg font-extrabold uppercase tracking-[0.2em] text-burgundy sm:text-xl">
+        Le Panier Parfait
+      </a>
+      <nav class="hidden items-center gap-6 text-sm font-semibold text-stone-700 lg:flex">
+        <a href="#catalogue" class="transition hover:text-burgundy">Catalogue</a>
+        <a href="#categories" class="transition hover:text-burgundy">Catégories</a>
+        <a href="#apropos" class="transition hover:text-burgundy">À propos</a>
+        <a href="#contact" class="transition hover:text-burgundy">Contact</a>
+      </nav>
+      <a href="https://wa.me/24107955233" target="_blank" rel="noopener noreferrer" class="hidden rounded-full bg-gold px-5 py-3 text-sm font-bold text-white transition hover:opacity-90 sm:inline-flex">
+        WhatsApp
+      </a>
+      <button id="menu-toggle" type="button" class="rounded-md border border-stone-200 px-3 py-2 text-burgundy lg:hidden" aria-label="Ouvrir le menu">
+        <span class="block h-0.5 w-5 bg-current"></span>
+        <span class="mt-1.5 block h-0.5 w-5 bg-current"></span>
+        <span class="mt-1.5 block h-0.5 w-5 bg-current"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden border-t border-stone-100 bg-white lg:hidden">
+      <nav class="mx-auto flex max-w-7xl flex-col px-4 py-4 text-sm font-semibold text-stone-700 sm:px-6">
+        <a href="#catalogue" class="py-2">Catalogue</a>
+        <a href="#categories" class="py-2">Catégories</a>
+        <a href="#apropos" class="py-2">À propos</a>
+        <a href="#contact" class="py-2">Contact</a>
+        <a href="https://wa.me/24107955233" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex w-fit rounded-full bg-gold px-5 py-3 text-white">
+          WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="accueil" class="relative overflow-hidden bg-[linear-gradient(rgba(38,16,23,0.45),rgba(38,16,23,0.45)),url('assets/images/garnis/panier-garnis.jpeg')] bg-cover bg-center">
+      <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-28 lg:px-8 lg:py-36">
+        <div class="max-w-3xl text-white">
+          <p class="mb-4 text-sm font-bold uppercase tracking-[0.35em] text-gold">Boutique cadeau premium à Libreville</p>
+          <h1 class="max-w-2xl text-4xl font-extrabold uppercase leading-tight sm:text-5xl lg:text-6xl">
+            Le cadeau parfait pour chaque moment
+          </h1>
+          <p class="mt-6 max-w-2xl text-base leading-7 text-stone-100 sm:text-lg">
+            Offrez des paniers cadeaux raffinés, des bouquets et des créations personnalisées pensés pour surprendre avec élégance.
+          </p>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a href="#catalogue" class="inline-flex justify-center rounded-full bg-gold px-7 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white transition hover:opacity-90">
+              Voir le catalogue
+            </a>
+            <a href="https://wa.me/24107955233" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center rounded-full border border-white px-7 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white transition hover:bg-white hover:text-burgundy">
+              Commander sur WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="bg-cream py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.3em] text-burgundy">Découvrez notre univers</p>
+          <h2 class="mt-3 text-3xl font-extrabold uppercase tracking-[0.12em] text-burgundy sm:text-4xl">Par catégorie</h2>
+          <div class="mx-auto mt-4 h-1 w-24 rounded-full bg-gold"></div>
+        </div>
+        <div class="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+          <div class="reveal rounded-3xl bg-white p-5 text-center shadow-soft">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-burgundy/10 text-2xl text-burgundy">🍎</div>
+            <p class="mt-4 text-sm font-bold uppercase tracking-[0.14em] text-burgundy">Paniers Fruits</p>
+          </div>
+          <div class="reveal rounded-3xl bg-white p-5 text-center shadow-soft">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-gold/15 text-2xl text-burgundy">🧀</div>
+            <p class="mt-4 text-sm font-bold uppercase tracking-[0.14em] text-burgundy">Paniers Gourmands</p>
+          </div>
+          <div class="reveal rounded-3xl bg-white p-5 text-center shadow-soft">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-burgundy/10 text-2xl text-burgundy">🧔</div>
+            <p class="mt-4 text-sm font-bold uppercase tracking-[0.14em] text-burgundy">Paniers Homme</p>
+          </div>
+          <div class="reveal rounded-3xl bg-white p-5 text-center shadow-soft">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-gold/15 text-2xl text-burgundy">💄</div>
+            <p class="mt-4 text-sm font-bold uppercase tracking-[0.14em] text-burgundy">Paniers Femme</p>
+          </div>
+          <div class="reveal rounded-3xl bg-white p-5 text-center shadow-soft">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-burgundy/10 text-2xl text-burgundy">💸</div>
+            <p class="mt-4 text-sm font-bold uppercase tracking-[0.14em] text-burgundy">Money Cake</p>
+          </div>
+          <div class="reveal rounded-3xl bg-white p-5 text-center shadow-soft">
+            <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-gold/15 text-2xl text-burgundy">💐</div>
+            <p class="mt-4 text-sm font-bold uppercase tracking-[0.14em] text-burgundy">Bouquets</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogue" class="bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.3em] text-burgundy">Sélection signature</p>
+          <h2 class="mt-3 text-3xl font-extrabold uppercase tracking-[0.12em] text-burgundy sm:text-4xl">Nos paniers cadeaux</h2>
+          <div class="mx-auto mt-4 h-1 w-24 rounded-full bg-gold"></div>
+        </div>
+        <div id="product-grid" class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"></div>
+      </div>
+    </section>
+
+    <section class="bg-burgundy py-10">
+      <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-5 px-4 sm:px-6 md:flex-row md:items-center lg:px-8">
+        <div class="reveal">
+          <h2 class="text-2xl font-extrabold uppercase tracking-[0.12em] text-white sm:text-3xl">Pour toute commande ou question</h2>
+          <p class="mt-2 text-sm text-stone-200 sm:text-base">Notre équipe vous répond rapidement sur WhatsApp.</p>
+        </div>
+        <a href="https://wa.me/24107955233" target="_blank" rel="noopener noreferrer" class="reveal inline-flex rounded-full bg-gold px-7 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white transition hover:opacity-90">
+          WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <section id="apropos" class="bg-cream py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.3em] text-burgundy">Pourquoi nous choisir</p>
+          <h2 class="mt-3 text-3xl font-extrabold uppercase tracking-[0.12em] text-burgundy sm:text-4xl">Une attention dans chaque détail</h2>
+          <div class="mx-auto mt-4 h-1 w-24 rounded-full bg-gold"></div>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <div class="reveal rounded-3xl bg-white p-8 shadow-soft">
+            <div class="text-3xl text-burgundy">❤</div>
+            <h3 class="mt-5 text-xl font-extrabold uppercase tracking-[0.08em] text-burgundy">Fait avec amour</h3>
+            <p class="mt-3 text-sm leading-7 text-stone-600">Chaque composition est préparée avec soin pour transmettre une émotion sincère et élégante.</p>
+          </div>
+          <div class="reveal rounded-3xl bg-white p-8 shadow-soft">
+            <div class="text-3xl text-burgundy">🚚</div>
+            <h3 class="mt-5 text-xl font-extrabold uppercase tracking-[0.08em] text-burgundy">Livraison à Libreville</h3>
+            <p class="mt-3 text-sm leading-7 text-stone-600">Nous proposons une livraison pratique à Libreville pour simplifier vos surprises et vos commandes.</p>
+          </div>
+          <div class="reveal rounded-3xl bg-white p-8 shadow-soft">
+            <div class="text-3xl text-burgundy">✨</div>
+            <h3 class="mt-5 text-xl font-extrabold uppercase tracking-[0.08em] text-burgundy">Personnalisable selon vos envies</h3>
+            <p class="mt-3 text-sm leading-7 text-stone-600">Choisissez les produits, les couleurs et l'ambiance pour créer un cadeau qui vous ressemble.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.3em] text-burgundy">Ils nous font confiance</p>
+          <h2 class="mt-3 text-3xl font-extrabold uppercase tracking-[0.12em] text-burgundy sm:text-4xl">Témoignages</h2>
+          <div class="mx-auto mt-4 h-1 w-24 rounded-full bg-gold"></div>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <article class="reveal rounded-3xl bg-cream p-8 shadow-soft">
+            <div class="text-gold">★★★★★</div>
+            <p class="mt-4 text-sm leading-7 text-stone-700">Service impeccable, panier magnifique et livraison rapide. La surprise a fait son effet.</p>
+            <p class="mt-6 font-serif text-2xl font-semibold text-burgundy">Sandrine M.</p>
+          </article>
+          <article class="reveal rounded-3xl bg-cream p-8 shadow-soft">
+            <div class="text-gold">★★★★★</div>
+            <p class="mt-4 text-sm leading-7 text-stone-700">Très belle présentation, produits de qualité et échanges WhatsApp très simples.</p>
+            <p class="mt-6 font-serif text-2xl font-semibold text-burgundy">Arnaud B.</p>
+          </article>
+          <article class="reveal rounded-3xl bg-cream p-8 shadow-soft">
+            <div class="text-gold">★★★★★</div>
+            <p class="mt-4 text-sm leading-7 text-stone-700">J'ai commandé un bouquet personnalisé, le rendu était chic et exactement comme souhaité.</p>
+            <p class="mt-6 font-serif text-2xl font-semibold text-burgundy">Clarisse N.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="bg-burgundy pt-16 text-white">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
+      <div>
+        <h3 class="text-lg font-extrabold uppercase tracking-[0.14em] text-gold">Liens utiles</h3>
+        <div class="mt-5 space-y-3 text-sm text-stone-200">
+          <a href="#catalogue" class="block hover:text-white">Catalogue</a>
+          <a href="#categories" class="block hover:text-white">Catégories</a>
+          <a href="#apropos" class="block hover:text-white">À propos</a>
+          <a href="https://wa.me/24107955233" target="_blank" rel="noopener noreferrer" class="block hover:text-white">Commander</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-extrabold uppercase tracking-[0.14em] text-gold">Contact</h3>
+        <div class="mt-5 space-y-3 text-sm text-stone-200">
+          <p>Libreville, Gabon</p>
+          <a href="tel:+24107955233" class="block hover:text-white">+241 07 95 52 33</a>
+          <a href="https://wa.me/24107955233" target="_blank" rel="noopener noreferrer" class="block hover:text-white">WhatsApp</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-lg font-extrabold uppercase tracking-[0.14em] text-gold">Réseaux sociaux</h3>
+        <div class="mt-5 space-y-3 text-sm text-stone-200">
+          <a href="#" class="block hover:text-white">Facebook</a>
+          <a href="#" class="block hover:text-white">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 border-t border-white/10 px-4 py-6 text-center text-sm text-stone-300 sm:px-6 lg:px-8">
+      © 2026 Le Panier Parfait. Tous droits réservés.
+    </div>
+  </footer>
+
+  <a href="https://wa.me/24107955233" target="_blank" rel="noopener noreferrer" aria-label="Contacter sur WhatsApp" class="fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-2xl text-white shadow-lg transition hover:scale-105">
+    💬
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
